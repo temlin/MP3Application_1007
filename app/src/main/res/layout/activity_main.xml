@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.tem.mp3application.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/musicList"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Textotal"
+            android:id="@+id/Textotal" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_marginTop="10dp"
+            android:indeterminate="false" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:text="&lt;play"
+                android:id="@+id/playbtn"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="stop"
+                android:id="@+id/stopbtn" />
+
+            <Button
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="prev"
+                android:id="@+id/prevbtn" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="next>"
+                android:id="@+id/nextbtn" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
